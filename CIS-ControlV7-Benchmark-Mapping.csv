@@ -1,0 +1,503 @@
+CIS Control,Asset Type,Security Function,SubControl-Title,CIS_CentOS_Linux_7_Benchmark_v3.1.1,NIST Controls (Control Num - Control Name)
+1 Inventory and Control of Hardware Assets,,,,,
+,Devices,Identify,1.1 Utilize an Active Discovery Tool,,"DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Devices,Identify,1.2 Use a Passive Asset Discovery Tool,,"DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Devices,Identify,1.3 Use DHCP Logging to Update Asset Inventory,,"DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Devices,Identify,1.4 Maintain Detailed Asset Inventory,,"ID.AM-1 Physical devices and systems within the organization are inventoried
+PR.DS-3 Assets are formally managed throughout removal, transfers, and disposition"
+,Devices,Identify,1.5 Maintain Asset Inventory Information,,"PR.DS-3 Assets are formally managed throughout removal, transfers, and disposition"
+,Devices,Respond,1.6 Address Unauthorized Assets,,"PR.DS-3 Assets are formally managed throughout removal, transfers, and disposition"
+,Devices,Protect,1.7 Deploy Port Level Access Control,,"PR.AC-1 Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes"
+,Devices,Protect,1.8 Utilize Client Certificates to Authenticate Hardware Assets,,PR.AC-6 Identities are proofed and bound to credentials and asserted in interactions
+2 Inventory and Control of Software Assets,,,,,
+,Applications,Identify,2.1 Maintain Inventory of Authorized Software,,ID.AM-2 Software platforms and applications within the organization are inventoried
+,Applications,Identify,2.2 Ensure Software is Supported by Vendor,,ID.AM-2 Software platforms and applications within the organization are inventoried
+,Applications,Identify,2.3 Utilize Software Inventory Tools,,"DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Applications,Identify,2.4 Track Software Inventory Information,,ID.AM-2 Software platforms and applications within the organization are inventoried
+,Applications,Identify,2.5 Integrate Software and Hardware Asset Inventories,,"ID.AM-1 Physical devices and systems within the organization are inventoried
+ID.AM-2 Software platforms and applications within the organization are inventoried"
+,Applications,Respond,2.6 Address unapproved software,"1.1.3 Ensure noexec option set on /tmp partition (Automated)
+1.1.7 Ensure noexec option set on /dev/shm partition (Automated)
+1.1.12 Ensure /var/tmp partition includes the noexec option (Automated)
+1.1.19 Ensure removable media partitions include noexec option (Automated)
+1.8.1 Ensure GNOME Display Manager is removed (Manual)
+2.1.1 Ensure xinetd is not installed (Automated)
+2.2.2 Ensure X11 Server components are not installed (Automated)
+2.2.6 Ensure LDAP server is not installed (Automated)
+2.2.13 Ensure net-snmp is not installed (Automated)
+2.2.14 Ensure NIS server is not installed (Automated)
+2.2.15 Ensure telnet-server is not installed (Automated)
+2.3.1 Ensure NIS Client is not installed (Automated)
+2.3.2 Ensure rsh client is not installed (Automated)
+2.3.3 Ensure talk client is not installed (Automated)
+2.3.4 Ensure telnet client is not installed (Automated)
+3.5.3.2.6 Ensure iptables is enabled and running (Automated)","PR.DS-6 Integrity checking mechanisms are used to verify software, firmware, and information integrity
+DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Applications,Protect,2.7 Utilize Application Whitelisting,,"PR.DS-6 Integrity checking mechanisms are used to verify software, firmware, and information integrity
+DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Applications,Protect,2.8 Implement Application Whitelisting of Libraries,,"PR.DS-6 Integrity checking mechanisms are used to verify software, firmware, and information integrity
+DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Applications,Protect,2.9 Implement Application Whitelisting of Scripts,,
+,Applications,Protect,2.10 Physically or Logically Segregate High Risk Applications,,
+3 Continuous Vulnerability Management,,,,,
+,Applications,Detect,3.1 Run Automated Vulnerability Scanning Tools,,"ID.RA-1 Asset vulnerabilities are identified and documented
+DE.CM-8 Vulnerability scans are performed"
+,Applications,Detect,3.2 Perform Authenticated Vulnerability Scanning,,DE.CM-8 Vulnerability scans are performed
+,Users,Protect,3.3 Protect Dedicated Assessment Accounts,,"RS.MI-3 Newly identified vulnerabilities are mitigated or documented as accepted risks
+ID.RA-5 Threats, vulnerabilities, likelihoods, and impacts are used to determine risk
+PR.IP-12 A vulnerability management plan is developed and implemented"
+,Applications,Protect,3.4 Deploy Automated Operating System Patch Management Tools,"1.2.1 Ensure GPG keys are configured (Manual)
+1.2.2 Ensure package manager repositories are configured (Manual)
+1.2.3 Ensure gpgcheck is globally activated (Automated)
+1.9 Ensure updates, patches, and additional security software are installed (Manual)",
+,Applications,Protect,3.5 Deploy Automated Software Patch Management Tools,"1.2.1 Ensure GPG keys are configured (Manual)
+1.2.2 Ensure package manager repositories are configured (Manual)
+1.9 Ensure updates, patches, and additional security software are installed (Manual)",
+,Applications,Respond,3.6 Compare Back-to-Back Vulnerability Scans,,
+,Applications,Respond,3.7 Utilize a Risk-Rating Process,,
+4 Controlled Use of Administrative Privileges,,,,,
+,Users,Detect,4.1 Maintain Inventory of Administrative Accounts,,"PR.AC-1 Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes"
+,Users,Protect,4.2 Change Default Passwords,,"PR.AC-1 Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes"
+,Users,Protect,4.3 Ensure the Use of Dedicated Administrative Accounts,"5.3.4 Ensure SSH access is limited (Automated)
+5.3.10 Ensure SSH root login is disabled (Automated)","PR.AC-4 Access permissions and authorizations are managed, incorporating the principles of least privilege and separation of duties"
+,Users,Protect,4.4 Use Unique Passwords,"5.3.13 Ensure only strong Ciphers are used (Automated)
+5.3.14 Ensure only strong MAC algorithms are used (Automated)
+5.3.15 Ensure only strong Key Exchange algorithms are used (Automated)
+5.4.1 Ensure password creation requirements are configured (Automated)
+5.4.4 Ensure password reuse is limited (Automated)
+5.5.1.1 Ensure password expiration is 365 days or less (Automated)
+5.5.1.2 Ensure minimum days between password changes is configured(Automated)
+5.5.1.3 Ensure password expiration warning days is 7 or more (Automated)
+5.5.1.5 Ensure all users last password change date is in the past (Automated)
+6.2.1 Ensure accounts in /etc/passwd use shadowed passwords (Automated)
+6.2.2 Ensure /etc/shadow password fields are not empty (Automated)",
+,Users,Protect,4.5 Use Multi-Factor Authentication for All Administrative Access,,"PR.AC-7 Users, devices, and other assets are authenticated (e.g., single-factor, multi-factor) commensurate with the risk of the transaction (e.g., individuals’ security and privacy risks and other organizational risks)"
+,Users,Protect,4.6 Use Dedicated Workstations For All Administrative Tasks,,
+,Users,Protect,4.7 Limit Access to Script Tools,,PR.PT-3 The principle of least functionality is incorporated by configuring systems to provide only essential capabilities
+,Users,Detect,4.8 Log and Alert on Changes to Administrative Group Membership,"4.1.4 Ensure events that modify user/group information are collected (Automated)
+4.1.14 Ensure changes to system administration scope (sudoers) is collected (Automated)","DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Users,Detect,4.9 Log and Alert on Unsuccessful Administrative Account Login,"4.1.7 Ensure login and logout events are collected (Automated)
+4.1.8 Ensure session initiation information is collected (Automated)","DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+"5 Secure Configuration for Hardware and Software on Mobile Devices, Laptops, Workstations and Servers",,,,,
+,Applications,Protect,5.1 Establish Secure Configurations,"1.1.1.1 Ensure mounting of cramfs filesystems is disabled (Automated)
+1.1.1.2 Ensure mounting of squashfs filesystems is disabled (Automated)
+1.1.1.3 Ensure mounting of udf filesystems is disabled (Automated)
+1.1.4 Ensure nodev option set on /tmp partition (Automated)
+1.1.5 Ensure nosuid option set on /tmp partition (Automated)
+1.1.6 Ensure /dev/shm is configured (Automated)
+1.1.8 Ensure nodev option set on /dev/shm partition (Automated)
+1.1.9 Ensure nosuid option set on /dev/shm partition (Automated)
+1.1.10 Ensure separate partition exists for /var (Automated)
+1.1.11 Ensure separate partition exists for /var/tmp (Automated)
+1.1.13 Ensure /var/tmp partition includes the nodev option (Automated)
+1.1.14 Ensure /var/tmp partition includes the nosuid option (Automated)
+1.1.17 Ensure separate partition exists for /home (Automated)
+1.1.18 Ensure /home partition includes the nodev option (Automated)
+1.1.20 Ensure nodev option set on removable media partitions (Automated)
+1.1.21 Ensure nosuid option set on removable media partitions (Automated)
+1.1.22 Ensure sticky bit is set on all world-writable directories (Automated)
+1.4.1 Ensure bootloader password is set (Automated)
+1.4.2 Ensure permissions on bootloader config are configured (Automated)
+1.4.3 Ensure authentication required for single user mode (Automated)
+1.5.1 Ensure core dumps are restricted (Automated)
+1.7.1 Ensure message of the day is configured properly (Automated)
+1.7.2 Ensure local login warning banner is configured properly (Automated)
+1.7.3 Ensure remote login warning banner is configured properly (Automated)
+1.8.2 Ensure GDM login banner is configured (Automated)
+1.8.3 Ensure last logged in user display is disabled (Automated)
+3.2.1 Ensure IP forwarding is disabled (Automated)
+3.2.2 Ensure packet redirect sending is disabled (Automated)
+3.3.1 Ensure source routed packets are not accepted (Automated)
+3.3.2 Ensure ICMP redirects are not accepted (Automated)
+3.3.3 Ensure secure ICMP redirects are not accepted (Automated)
+3.3.5 Ensure broadcast ICMP requests are ignored (Automated)
+3.3.6 Ensure bogus ICMP responses are ignored (Automated)
+3.3.7 Ensure Reverse Path Filtering is enabled (Automated)
+3.3.8 Ensure TCP SYN Cookies is enabled (Automated)
+3.3.9 Ensure IPv6 router advertisements are not accepted (Automated)
+3.5.1.1 Ensure firewalld is installed (Automated)
+3.5.1.2 Ensure iptables-services not installed with firewalld (Automated)
+3.5.1.3 Ensure nftables either not installed or masked with firewalld (Automated)
+3.5.1.4 Ensure firewalld service enabled and running (Automated)
+3.5.1.5 Ensure firewalld default zone is set (Automated)
+3.5.1.6 Ensure network interfaces are assigned to appropriate zone (Manual)
+3.5.1.7 Ensure firewalld drops unnecessary services and ports (Manual)
+4.1.16 Ensure kernel module loading and unloading is collected (Automated)
+4.2.1.3 Ensure rsyslog default file permissions configured (Automated)
+4.2.3 Ensure permissions on all logfiles are configured (Manual)
+5.1.1 Ensure cron daemon is enabled and running (Automated)
+5.1.2 Ensure permissions on /etc/crontab are configured (Automated)
+5.1.3 Ensure permissions on /etc/cron.hourly are configured (Automated)
+5.1.4 Ensure permissions on /etc/cron.daily are configured (Automated)
+5.1.5 Ensure permissions on /etc/cron.weekly are configured (Automated)
+5.1.6 Ensure permissions on /etc/cron.monthly are configured (Automated)
+5.1.7 Ensure permissions on /etc/cron.d are configured (Automated)
+5.1.8 Ensure cron is restricted to authorized users (Automated)
+5.1.9 Ensure at is restricted to authorized users (Automated)
+5.3.12 Ensure SSH PermitUserEnvironment is disabled (Automated)
+5.3.17 Ensure SSH LoginGraceTime is set to one minute or less (Automated)
+5.3.18 Ensure SSH warning banner is configured (Automated)
+5.3.19 Ensure SSH PAM is enabled (Automated)
+5.3.21 Ensure SSH MaxStartups is configured (Automated)
+5.3.22 Ensure SSH MaxSessions is limited (Automated)
+5.5.1.1 Ensure password expiration is 365 days or less (Automated)
+5.5.1.2 Ensure minimum days between password changes is configured(Automated)
+5.5.1.3 Ensure password expiration warning days is 7 or more (Automated)
+5.5.1.4 Ensure inactive password lock is 30 days or less (Automated)
+5.5.1.5 Ensure all users last password change date is in the past (Automated)
+5.5.3 Ensure default group for the root account is GID 0 (Automated)
+5.5.5 Ensure default user umask is configured (Automated)
+5.6 Ensure root login is restricted to system console (Manual)
+5.7 Ensure access to the su command is restricted (Automated)
+6.1.10 Ensure no world writable files exist (Automated)
+6.1.13 Audit SUID executables (Manual)
+6.1.14 Audit SGID executables (Manual)
+6.2.4 Ensure shadow group is empty (Automated)
+6.2.9 Ensure root is the only UID 0 account (Automated)
+6.2.10 Ensure root PATH Integrity (Automated)
+6.2.11 Ensure all users' home directories exist (Automated)
+6.2.15 Ensure no users have .forward files (Automated)",PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Applications,Protect,5.2 Maintain Secure Images,,PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Applications,Protect,5.3 Securely Store Master Images,,PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Applications,Protect,5.4 Deploy System Configuration Management Tools,,
+,Applications,Detect,5.5 Implement Automated Configuration Monitoring Systems,"4.1.3 Ensure events that modify date and time information are collected (Automated)
+4.1.5 Ensure events that modify the system's network environment are collected (Automated)
+4.1.6 Ensure events that modify the system's Mandatory Access Controls are collected (Automated)
+4.1.9 Ensure discretionary access control permission modification events are collected (Automated)",DE.CM-8 Vulnerability scans are performed
+"6 Maintenance, Monitoring and Analysis of Audit Logs",,,,,
+,Network,Detect,6.1 Utilize Three Synchronized Time Sources,"2.2.1.1 Ensure time synchronization is in use (Manual)
+2.2.1.2 Ensure chrony is configured (Automated)
+2.2.1.3 Ensure ntp is configured (Automated)",
+,Network,Detect,6.2 Activate Audit Logging,"3.3.4 Ensure suspicious packets are logged (Automated)
+4.1.1.1 Ensure auditd is installed (Automated)
+4.1.1.2 Ensure auditd service is enabled and running (Automated)
+4.1.1.3 Ensure auditing for processes that start prior to auditd is enabled (Automated)
+4.1.2.2 Ensure audit logs are not automatically deleted (Automated)
+4.1.2.3 Ensure system is disabled when audit logs are full (Automated)
+4.1.2.4 Ensure audit_backlog_limit is sufficient (Automated)
+4.1.5 Ensure events that modify the system's network environment are collected (Automated)
+4.1.11 Ensure use of privileged commands is collected (Automated)
+4.1.12 Ensure successful file system mounts are collected (Automated)
+4.1.13 Ensure file deletion events by users are collected (Automated)
+4.1.17 Ensure the audit configuration is immutable (Automated)
+4.2.1.1 Ensure rsyslog is installed (Automated)
+4.2.1.2 Ensure rsyslog Service is enabled and running (Automated)
+4.2.1.4 Ensure logging is configured (Manual)
+4.2.2.3 Ensure journald is configured to write logfiles to persistent disk(Automated)
+5.3.5 Ensure SSH LogLevel is appropriate (Automated)","PR.PT-1 Audit/log records are determined, documented, implemented, and reviewed in accordance with policy
+DE.AE-3 Event data are collected and correlated from multiple sources and sensors"
+,Network,Detect,6.3 Enable Detailed Logging,"3.3.4 Ensure suspicious packets are logged (Automated)
+4.1.1.1 Ensure auditd is installed (Automated)
+4.1.1.2 Ensure auditd service is enabled and running (Automated)
+4.1.1.3 Ensure auditing for processes that start prior to auditd is enabled (Automated)
+4.1.2.4 Ensure audit_backlog_limit is sufficient (Automated)
+4.1.17 Ensure the audit configuration is immutable (Automated)
+4.2.1.1 Ensure rsyslog is installed (Automated)
+4.2.1.2 Ensure rsyslog Service is enabled and running (Automated)
+4.2.1.4 Ensure logging is configured (Manual)
+4.2.2.3 Ensure journald is configured to write logfiles to persistent disk(Automated)
+5.2.3 Ensure sudo log file exists (Automated)
+5.3.5 Ensure SSH LogLevel is appropriate (Automated)","PR.PT-1 Audit/log records are determined, documented, implemented, and reviewed in accordance with policy"
+,Network,Detect,6.4 Ensure Adequate Storage for Logs,"1.1.15 Ensure separate partition exists for /var/log (Automated)
+1.1.16 Ensure separate partition exists for /var/log/audit (Automated)
+4.1.2.1 Ensure audit log storage size is configured (Automated)
+4.1.2.2 Ensure audit logs are not automatically deleted (Automated)
+4.1.2.3 Ensure system is disabled when audit logs are full (Automated)
+4.2.2.2 Ensure journald is configured to compress large log files (Automated)
+4.2.4 Ensure logrotate is configured (Manual)",PR.DS-4 Adequate capacity to ensure availability is maintained
+,Network,Detect,6.5 Central Log Management,4.2.2.1 Ensure journald is configured to send logs to rsyslog (Automated),"PR.PT-1 Audit/log records are determined, documented, implemented, and reviewed in accordance with policy
+DE.AE-3 Event data are collected and correlated from multiple sources and sensors"
+,Network,Detect,6.6 Deploy SIEM or Log Analytic Tools,4.2.1.5 Ensure rsyslog is configured to send logs to a remote log host (Automated),DE.AE-3 Event data are collected and correlated from multiple sources and sensors
+,Network,Detect,6.7 Regularly Review Logs,,"PR.PT-1 Audit/log records are determined, documented, implemented, and reviewed in accordance with policy
+RS.AN-1 Notifications from detection systems are investigated 
+DE.AE-2 Detected events are analyzed to understand attack targets and methods"
+,Network,Detect,6.8 Regularly Tune SIEM,4.2.1.5 Ensure rsyslog is configured to send logs to a remote log host (Automated),DE.AE-5 Incident alert thresholds are established
+7 Email and Web Browser Protections,,,,,
+,Applications,Protect,7.1 Ensure Use of Only Fully Supported Browsers and Email Clients,,PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Applications,Protect,7.2 Disable Unnecessary or Unauthorized Browser or Email Client Plugins,,PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Applications,Protect,7.3 Limit Use of Scripting Languages in Web Browsers and Email Clients,,PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Network,Protect,7.4 Maintain and Enforce Network-Based URL Filters,,"DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Network,Protect,7.5 Subscribe to URL-Categorization Service,,"DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Network,Detect,7.6 Log All URL requester,,DE.AE-3 Event data are aggregated and correlated from multiple sources and sensors 
+,Network,Protect,7.7 Use of DNS Filtering Services,,"DE.CM-1
+ The network is monitored to detect potential cybersecurity events
+DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Network,Protect,7.8 Implement DMARC and Enable Receiver-Side Verification,,PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Network,Protect,7.9 Block Unnecessary File Types,,"DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Network,Protect,7.10 Sandbox All Email Attachments,,DE.CM-4 Malicious code is detected
+8 Malware Defenses,,,,,
+,Devices,Protect,8.1 Utilize Centrally Managed Anti-malware Software,,DE.CM-4 Malicious code is detected
+,Devices,Protect,8.2 Ensure Anti-Malware Software and Signatures Are Updated,,DE.CM-4 Malicious code is detected
+,Devices,Protect,8.3 Enable Operating System Anti-Exploitation Features/Deploy Anti-Exploit Technologies,"1.5.2 Ensure XD/NX support is enabled (Automated)
+1.5.3 Ensure address space layout randomization (ASLR) is enabled (Automated)
+",PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Devices,Detect,8.4 Configure Anti-Malware Scanning of Removable Devices,"1.1.23 Disable Automounting (Automated)
+1.1.24 Disable USB Storage (Automated)",DE.CM-4 Malicious code is detected
+,Devices,Protect,8.5 Configure Devices to Not Auto-Run Content,"1.1.23 Disable Automounting (Automated)
+1.1.24 Disable USB Storage (Automated)",PR.PT-2 Removable media is protected and its use restricted according to policy
+,Devices,Detect,8.6 Centralize Anti-Malware Logging,,DE.AE-3 Event data are collected and correlated from multiple sources and sensors
+,Network,Detect,8.7 Enable DNS Query Logging,,"DE.AE-3 Event data are collected and correlated from multiple sources and sensors
+DE.CM-1 The network is monitored to detect potential cybersecurity events"
+,Devices,Detect,8.8 Enable Command-Line Audit Logging,,DE.AE-3 Event data are collected and correlated from multiple sources and sensors
+"9 Limitation and Control of Network Ports, Protocols, and Services",,,,,
+,Devices,Identify,"9.1 Associate Active Ports, Services, and Protocols to Asset Inventory",,
+,Devices,Protect,"9.2 Ensure Only Approved Ports, Protocols, and Services Are Running","1.6.1.6 Ensure no unconfined services exist (Automated)
+1.6.1.8 Ensure the MCS Translation Service (mcstrans) is not installed (Automated)
+1.8.4 Ensure XDCMP is not enabled (Automated)
+2.1.1 Ensure xinetd is not installed (Automated)
+2.2.3 Ensure Avahi Server is not installed (Automated)
+2.2.4 Ensure CUPS is not installed (Automated)
+2.2.5 Ensure DHCP Server is not installed (Automated)
+2.2.6 Ensure LDAP server is not installed (Automated)
+2.2.7 Ensure DNS Server is not installed (Automated)
+2.2.8 Ensure FTP Server is not installed (Automated)
+2.2.9 Ensure HTTP server is not installed (Automated)
+2.2.10 Ensure IMAP and POP3 server is not installed (Automated)
+2.2.11 Ensure Samba is not installed (Automated)
+2.2.12 Ensure HTTP Proxy Server is not installed (Automated)
+2.2.13 Ensure net-snmp is not installed (Automated)
+2.2.14 Ensure NIS server is not installed (Automated)
+2.2.15 Ensure telnet-server is not installed (Automated)
+2.2.16 Ensure mail transfer agent is configured for local-only mode (Automated)
+2.2.17 Ensure nfs-utils is not installed or the nfs-server service is masked (Automated)
+2.2.18 Ensure rpcbind is not installed or the rpcbind services are masked (Automated)
+2.2.19 Ensure rsync is not installed or the rsyncd service is masked (Automated)
+2.4 Ensure nonessential services are removed or masked (Manual)
+3.4.1 Ensure DCCP is disabled (Automated)
+3.4.2 Ensure SCTP is disabled (Automated)
+4.2.1.6 Ensure remote rsyslog messages are only accepted on designated log hosts. (Manual)
+5.3.6 Ensure SSH X11 forwarding is disabled (Automated)
+5.3.8 Ensure SSH IgnoreRhosts is enabled (Automated)
+5.3.20 Ensure SSH AllowTcpForwarding is disabled (Automated)",PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Devices,Detect,9.3 Perform Regular Automated Port Scans,,DE.CM-8 Vulnerability scans are performed
+,Devices,Protect,9.4 Apply Host-Based Firewalls or Port-Filtering,"1.1.2 Ensure /tmp is configured (Automated)
+3.1.1 Disable IPv6 (Manual)
+3.5.1.1 Ensure firewalld is installed (Automated)
+3.5.1.2 Ensure iptables-services not installed with firewalld (Automated)
+3.5.1.3 Ensure nftables either not installed or masked with firewalld (Automated)
+3.5.1.4 Ensure firewalld service enabled and running (Automated)
+3.5.1.5 Ensure firewalld default zone is set (Automated)
+3.5.1.6 Ensure network interfaces are assigned to appropriate zone (Manual)
+3.5.1.7 Ensure firewalld drops unnecessary services and ports (Manual)
+3.5.2.1 Ensure nftables is installed (Automated)
+3.5.2.2 Ensure firewalld is either not installed or masked with nftables (Automated)
+3.5.2.3 Ensure iptables-services not installed with nftables (Automated)
+3.5.2.4 Ensure iptables are flushed with nftables (Manual)
+3.5.2.5 Ensure an nftables table exists (Automated)
+3.5.2.6 Ensure nftables base chains exist (Automated)
+3.5.2.7 Ensure nftables loopback traffic is configured (Automated)
+3.5.2.8 Ensure nftables outbound and established connections are configured (Manual)
+3.5.2.9 Ensure nftables default deny firewall policy (Automated)
+3.5.2.10 Ensure nftables service is enabled (Automated)
+3.5.2.11 Ensure nftables rules are permanent (Automated)
+3.5.3.1.1 Ensure iptables packages are installed (Automated)
+3.5.3.1.2 Ensure nftables is not installed with iptables (Automated)
+3.5.3.1.3 Ensure firewalld is either not installed or masked with iptables (Automated)
+3.5.3.2.1 Ensure iptables loopback traffic is configured (Automated)
+3.5.3.2.2 Ensure iptables outbound and established connections are configured (Manual)
+3.5.3.2.3 Ensure iptables rules exist for all open ports (Automated)
+3.5.3.2.4 Ensure iptables default deny firewall policy (Automated)
+3.5.3.2.5 Ensure iptables rules are saved (Automated)
+3.5.3.2.6 Ensure iptables is enabled and running (Automated)
+3.5.3.3.1 Ensure ip6tables loopback traffic is configured (Automated)
+3.5.3.3.2 Ensure ip6tables outbound and established connections are configured (Manual)
+3.5.3.3.3 Ensure ip6tables firewall rules exist for all open ports (Automated)
+3.5.3.3.4 Ensure ip6tables default deny firewall policy (Automated)
+3.5.3.3.5 Ensure ip6tables rules are saved (Automated)
+3.5.3.3.6 Ensure ip6tables is enabled and running (Automated)",PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Devices,Protect,9.5 Implement Application Firewalls,,"PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+systems to provide only essential capabilities"
+10 Data Recovery Capabilities,,,,,
+,Data,Protect,10.1 Ensure Regular Automated BackUps,,"PR.IP-4 Backups of information are conducted, maintained, and tested "
+,Data,Protect,10.2 Perform Complete System Backups,,"PR.IP-4 Backups of information are conducted, maintained, and tested "
+,Data,Protect,10.3 Test Data on Backup Media,,"PR.DS-6 Integrity checking mechanisms are used to verify software, firmware, and information integrity
+PR.IP-4 Backups of information are conducted, maintained, and tested "
+,Data,Protect,10.4 Protect Backups,,PR.DS-1 Data-at-rest is protected
+,Data,Protect,10.5 Ensure All Backups Have at Least One Offline Backup Destination,,"PR.PT-5 Mechanisms (e.g., failsafe, load balancing, hot swap) are implemented to achieve resilience requirements in normal and adverse situations
+PR.DS-1 Data-at-rest is protected"
+"11 Secure Configuration for Network Devices, such as Firewalls, Routers and Switches",,,,,
+,Network,Identify,11.1 Maintain Standard Security Configurations for Network Devices,,PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Network,Identify,11.2 Document Traffic Configuration Rules,,ID.AM-3 Organizational communication and data flows are mapped
+,Network,Detect,11.3 Use Automated Tools to Verify Standard Device Configurations and Detect Changes,,"DE.CM-8 Vulnerability scans are performed
+PR.IP-3 Configuration change control processes are in place"
+,Network,Protect,11.4 Install the Latest Stable Version of Any Security-Related Updates on All Network Devices,,PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Network,Protect,11.5 Manage Network Devices Using Multi-Factor Authentication and Encrypted Sessions,,"PR.AC-7 Users, devices, and other assets are authenticated (e.g., single-factor, multifactor)
+commensurate with the risk of the risks) transaction (e.g., individuals’ security and privacy risks and other organizational"
+,Network,Protect,11.6 Use Dedicated Machines For All Network Administrative Tasks,,"PR.AC-5 Network integrity is protected (e.g., network segregation, network segmentation)"
+,Network,Protect,11.7 Manage Network Infrastructure Through a Dedicated Network,,"PR.AC-5 Network integrity is protected (e.g., network segregation, network segmentation)"
+12 Boundary Defense,,,,,
+,Network,Identify,12.1 Maintain an Inventory of Network Boundaries,,ID.AM-4 External information systems are catalogued
+,Network,Detect,12.2 Scan for Unauthorized Connections Across Trusted Network Boundaries,,"DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed
+ID.AM-4 External information systems are catalogued"
+,Network,Protect,12.3 Deny Communications With Known Malicious IP Addresses,,PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Network,Protect,12.4 Deny Communication Over Unauthorized Ports,,PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Network,Detect,12.5 Configure Monitoring Systems to Record Network Packets,,DE.CM-1 The network is monitored to detect potential cybersecurity events
+,Network,Detect,12.6 Deploy Network-Based IDS Sensors,,DE.CM-1 The network is monitored to detect potential cybersecurity events
+,Network,Protect,12.7 Deploy Network-Based Intrusion Prevention Systems,,DE.CM-1 The network is monitored to detect potential cybersecurity events
+,Network,Detect,12.8 Deploy NetFlow Collection on Networking Boundary Devices,,DE.CM-1 The network is monitored to detect potential cybersecurity events
+,Network,Detect,12.9 Deploy Application Layer Filtering Proxy Server,,"DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed
+DE.CM-1 The network is monitored to detect potential cybersecurity events"
+,Network,Detect,12.10 Decrypt Network Traffic at Proxy,,"DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed
+DE.CM-1 The network is monitored to detect potential cybersecurity events"
+,Users,Protect,12.11 Require All Remote Login to Use Multi-Factor Authentication,,PR.AC-3 Remote access is managed
+,Devices,Protect,12.12 Manage All Devices Remotely Logging into Internal Network,,"PR.MA-2 Remote maintenance of organizational assets is approved, logged, and performed in a manner that prevents unauthorized access
+PR.AC-3 Remote access is managed"
+13 Data Protection,,,,"1.1.2 Ensure /tmp is configured (Automated)
+1.1.5 Ensure nosuid option set on /tmp partition (Automated)
+1.1.6 Ensure /dev/shm is configured (Automated)
+1.1.7 Ensure noexec option set on /dev/shm partition (Automated)
+1.1.8 Ensure nodev option set on /dev/shm partition (Automated)     
+1.1.9 Ensure nosuid option set on /dev/shm partition (Automated)    
+1.1.11 Ensure separate partition exists for /var/tmp (Automated)    
+1.1.13 Ensure /var/tmp partition includes the nodev option (Automated) 
+1.1.14 Ensure /var/tmp partition includes the nosuid option (Automated)
+1.1.17 Ensure separate partition exists for /home (Automated)  
+1.1.18 Ensure /home partition includes the nodev option (Automated) 
+1.1.19 Ensure removable media partitions include noexec option (Automated)
+1.1.20 Ensure nodev option set on removable media partitions (Automated)    
+1.1.21 Ensure nosuid option set on removable media partitions (Automated)   
+1.1.22 Ensure sticky bit is set on all world-writable directories (Automated)  
+4.1.13 Ensure file deletion events by users are collected (Automated)
+5.5.5 Ensure default user umask is configured (Automated)   ",
+,Data,Identify,13.1 Maintain an Inventory of Sensitive Information,,"ID.AM-5 Resources (e.g., hardware, devices, data, time, personnel, and software) are prioritized based on their classification, criticality, and business value "
+,Data,Protect,13.2 Remove Sensitive Data or Systems Not Regularly Accessed by Organization,"6.1.11 Ensure no unowned files or directories exist (Automated)
+6.1.12 Ensure no ungrouped files or directories exist (Automated)","PR.DS-3 Assets are formally managed throughout removal, transfers, and disposition"
+,Data,Detect,13.3 Monitor and Block Unauthorized Network Traffic,,PR.DS-5 Protections against data leaks are implemented
+,Data,Protect,13.4 Only Allow Access to Authorized Cloud Storage or Email Providers,,PR.DS-5 Protections against data leaks are implemented
+,Data,Detect,13.5 Monitor and Detect Any Unauthorized Use of Encryption,5.3.20 Ensure SSH AllowTcpForwarding is disabled (Automated),"DE.CM-7
+ Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Data,Protect,13.6 Encrypt Mobile Device Data,,PR.DS-1 Data-at-rest is protected
+,Data,Protect,13.7 Manage USB Devices,,PR.PT-2 Removable media is protected and its use restricted according to policy
+,Data,Protect,13.8 Manage System's External Removable Media's Read/Write Configurations,,PR.PT-2 Removable media is protected and its use restricted according to policy
+,Data,Protect,13.9 Encrypt Data on USB Storage Devices,,PR.PT-2 Removable media is protected and its use restricted according to policy
+14 Controlled Access Based on the Need to Know,,,,,
+,Network,Protect,14.1 Segment the Network Based on Sensitivity,,"PR.AC-5 Network integrity is protected (e.g., network segregation, network segmentation)"
+,Network,Protect,14.2 Enable Firewall Filtering Between VLANs,,"PR.AC-5 Network integrity is protected (e.g., network segregation, network segmentation)"
+,Network,Protect,14.3 Disable Workstation to Workstation Communication,,"PR.AC-5 Network integrity is protected (e.g., network segregation, network segmentation)"
+,Data,Protect,14.4 Encrypt All Sensitive Information in Transit,"5.3.13 Ensure only strong Ciphers are used (Automated)
+5.3.14 Ensure only strong MAC algorithms are used (Automated)
+5.3.15 Ensure only strong Key Exchange algorithms are used (Automated)",PR.DS-2 Data-in-transit is protected
+,Data,Detect,14.5 Utilize an Active Discovery Tool to Identify Sensitive Data,, 
+,Data,Protect,14.6 Protect Information Through Access Control Lists,"1.6.1.1 Ensure SELinux is installed (Automated)
+1.6.1.2 Ensure SELinux is not disabled in bootloader configuration (Automated)
+1.6.1.3 Ensure SELinux policy is configured (Automated)
+1.6.1.4 Ensure the SELinux mode is enforcing or permissive (Automated)
+1.6.1.5 Ensure the SELinux mode is enforcing (Automated)
+1.6.1.7 Ensure SETroubleshoot is not installed (Automated)
+1.7.4 Ensure permissions on /etc/motd are configured (Automated)
+1.7.5 Ensure permissions on /etc/issue are configured (Automated)
+1.7.6 Ensure permissions on /etc/issue.net are configured (Automated)
+5.1.2 Ensure permissions on /etc/crontab are configured (Automated)
+5.1.4 Ensure permissions on /etc/cron.daily are configured (Automated)
+5.1.5 Ensure permissions on /etc/cron.weekly are configured (Automated)
+5.1.6 Ensure permissions on /etc/cron.monthly are configured (Automated)
+5.1.7 Ensure permissions on /etc/cron.d are configured (Automated)
+5.3.1 Ensure permissions on /etc/ssh/sshd_config are configured (Automated)
+5.3.2 Ensure permissions on SSH private host key files are configured (Automated)
+5.3.3 Ensure permissions on SSH public host key files are configured (Automated)
+6.1.1 Audit system file permissions (Manual)
+6.1.2 Ensure permissions on /etc/passwd are configured (Automated)
+6.1.3 Ensure permissions on /etc/passwd- are configured (Automated)
+6.1.4 Ensure permissions on /etc/shadow are configured (Automated)
+6.1.5 Ensure permissions on /etc/shadow- are configured (Automated)
+6.1.7 Ensure permissions on /etc/gshadow are configured (Automated)
+6.1.8 Ensure permissions on /etc/group are configured (Automated)
+6.1.9 Ensure permissions on /etc/group- are configured (Automated)
+6.2.12 Ensure users own their home directories (Automated)
+6.2.13 Ensure users' home directories permissions are 750 or more restrictive (Automated)
+6.2.14 Ensure users' dot files are not group or world writable (Automated)","PR.AC-4 Access permissions and authorizations are managed, incorporating the principles of least privilege and separation of duties"
+,Data,Protect,14.7 Enforce Access Control to Data Through Automated Tools,,PR.DS-5 Protections against data leaks are implemented
+,Data,Protect,14.8 Encrypt Sensitive Information at Rest,,PR.DS-1 Data-at-rest is protected
+,Data,Detect,14.9 Enforce Detail Logging for Access or Changes to Sensitive Data,"1.3.1 Ensure AIDE is installed (Automated)
+1.3.2 Ensure filesystem integrity is regularly checked (Automated)
+1.5.4 Ensure prelink is not installed (Automated)
+4.1.10 Ensure unsuccessful unauthorized file access attempts are collected (Automated)","PR.DS-6 Integrity checking mechanisms are used to verify software, firmware, and information integrity"
+15 Wireless Access Control,,,,,
+,Network,Identify,15.1 Maintain an Inventory of Authorized Wireless Access Points,,"ID.AM-3 Organizational communication and data flows are mapped
+DE.AE-1 A baseline of network operations and expected data flows for users and systems is established and managed"
+,Network,Detect,15.2 Detect Wireless Access Points Connected to the Wired Network,,"DE.CM-7 Monitoring for unauthorized personnel, connections, devices, and software is performed"
+,Network,Detect,15.3 Use a Wireless Intrusion Detection System,,DE.CM-1 The network is monitored to detect potential cybersecurity events
+,Devices,Protect,15.4 Disable Wireless Access on Devices if Not Required,3.1.2 Ensure wireless interfaces are disabled (Automated),PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Devices,Protect,15.5 Limit Wireless Access on Client Devices,3.1.2 Ensure wireless interfaces are disabled (Automated),PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Devices,Protect,15.6 Disable Peer-to-Peer Wireless Network Capabilities on Wireless Clients,,PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Network,Protect,15.7 Leverage the Advanced Encryption Standard (AES) to Encrypt Wireless Data,,PR.DS-2 Data-in-transit is protected
+,Network,Protect,"15.8 Use Wireless Authentication Protocols That Require Mutual, Multi-Factor Authentication",,"PR.AC-7 Users, devices, and other assets are authenticated (e.g., single-factor, multifactor)
+commensurate with the risk of the transaction (e.g., individuals’ security and
+privacy risks and other organizational risks)"
+,Devices,Protect,15.9 Disable Wireless Peripheral Access of Devices,,PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Network,Protect,15.10 Create Separate Wireless Network for Personal and Untrusted Devices,,"PR.AC-5 Network integrity is protected (e.g., network segregation, network segmentation)"
+16 Account Monitoring and Control,,,,,
+,Users,Identify,16.1 Maintain an Inventory of Authentication Systems,,"PR.AC-1 Identities and credentials are issued, managed, verified, revoked, and
+audited for authorized devices, users and processes"
+,Users,Protect,16.2 Configure Centralized Point of Authentication,, 
+,Users,Protect,16.3 Require Multi-Factor Authentication,"5.3.9 Ensure SSH HostbasedAuthentication is disabled (Automated)
+5.3.11 Ensure SSH PermitEmptyPasswords is disabled (Automated)","PR.AC-7 Users, devices, and other assets are authenticated (e.g., single-factor, multi-factor) commensurate with the risk of the transaction (e.g., individuals’ security and privacy risks and other organizational risks)"
+,Users,Protect,16.4 Encrypt or Hash all Authentication Credentials,"5.4.3 Ensure password hashing algorithm is SHA-512 (Automated)
+6.1.6 Ensure permissions on /etc/gshadow- are configured (Automated)
+6.2.16 Ensure no users have .netrc files (Automated)
+6.2.17 Ensure no users have .rhosts files (Automated)","PR.AC-1 Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes"
+,Users,Protect,16.5 Encrypt Transmittal of Username and Authentication Credentials,5.3.14 Ensure only strong MAC algorithms are used (Automated),PR.DS-2 Data-in-transit is protected 
+,Users,Identify,16.6 Maintain an Inventory of Accounts,,"PR.AC-1 Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes"
+,Users,Protect,16.7 Establish Process for Revoking Access,5.4.2 Ensure lockout for failed password attempts is configured (Automated),"PR.AC-1 Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes
+PR.IP-11 Cybersecurity is included in human resources practices (e.g., deprovisioning, personnel screening)"
+,Users,Respond,16.8 Disable Any Unassociated Accounts,,"PR.AC-1 Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes"
+,Users,Respond,16.9 Disable Dormant Accounts,5.5.1.4 Ensure inactive password lock is 30 days or less (Automated),"PR.AC-1 Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes"
+,Users,Protect,16.10 Ensure All Accounts Have An Expiration Date,,"PR.AC-1 Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes"
+,Users,Protect,16.11 Lock Workstation Sessions After Inactivity,"4.1.7 Ensure login and logout events are collected (Automated)
+4.1.8 Ensure session initiation information is collected (Automated)
+5.3.16 Ensure SSH Idle Timeout Interval is configured (Automated)
+5.5.4 Ensure default user shell timeout is configured (Automated)",PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,Users,Detect,16.12 Monitor Attempts to Access Deactivated Accounts,,DE.CM-3 Personnel activity is monitored to detect potential cybersecurity events
+,Users,Detect,16.13 Alert on Account Login Behavior Deviation,"4.1.7 Ensure login and logout events are collected (Automated)
+4.1.8 Ensure session initiation information is collected (Automated)
+5.3.7 Ensure SSH MaxAuthTries is set to 4 or less (Automated)",DE.CM-3 Personnel activity is monitored to detect potential cybersecurity events
+,,,17 Implement a Security Awareness and Training Program,,
+,N/A,N/A,17.1 Perform a Skills Gap Analysis,,
+,N/A,N/A,17.2 Deliver Training to Fill the Skills Gap,,"PR.AT-5  Physical and cybersecurity personnel understand their roles and responsibilities 
+PR.AT-4 Senior executives understand their roles and responsibilities 
+PR.AT-3 Third-party stakeholders (e.g., suppliers, customers, partners) understand their roles and responsibilities 
+PR.AT-2  Privileged users understand their roles and responsibilities 
+PR.AT-1 All users are informed and trained "
+,N/A,N/A,17.3 Implement a Security Awareness Program,,"PR.AT-1 All users are informed and trained 
+ID.AM-6 Cybersecurity roles and responsibilities for the entire workforce and third-party stakeholders (e.g., suppliers, customers, partners) are established"
+,N/A,N/A,17.4 Update Awareness Content Frequently,,
+,N/A,N/A,17.5 Train Workforce on Secure Authentication,,PR.AT-1 All users are informed and trained 
+,N/A,N/A,17.6 Train Workforce on Identifying Social Engineering Attacks,,PR.AT-1 All users are informed and trained 
+,N/A,N/A,17.7 Train Workforce on Sensitive Data Handling,,PR.AT-1 All users are informed and trained 
+,N/A,N/A,17.8 Train Workforce on Causes of Unintentional Data Exposure,,PR.AT-1 All users are informed and trained 
+,N/A,N/A,17.9 Train Workforce Members on Identifying and Reporting Incidents,,PR.AT-1 All users are informed and trained 
+,,,18 Application Software Security,,
+,N/A,N/A,18.1 Establish Secure Coding Practices,,
+,N/A,N/A,18.2 Ensure That Explicit Error Checking is Performed for All In-House Developed Software,,
+,N/A,N/A,18.3 Verify That Acquired Software is Still Supported,,
+,N/A,N/A,18.4 Only Use Up-to-Date and Trusted Third-Party Components,,PR.DS-1 Data-at-rest is protected
+,N/A,N/A,18.5 Use Only Standardized and Extensively Reviewed Encryption Algorithms,,PR.DS-2 Data-in-transit is protected
+,N/A,N/A,18.6 Ensure Software Development Personnel are Trained in Secure Coding,,
+,N/A,N/A,18.7 Apply Static and Dynamic Code Analysis Tools,,
+,N/A,N/A,18.8 Establish a Process to Accept and Address Reports of Software Vulnerabilities,,"RS.AN-5 Processes are established to receive, analyze and respond to vulnerabilities disclosed to the organization from internal and external sources (e.g. internal testing, security bulletins, or security researchers)"
+,N/A,N/A,18.9 Separate Production and Non-Production Systems,,PR.DS-7 The development and testing environment(s) are separate from the production environment
+,N/A,N/A,18.10 Deploy Web Application Firewalls,,
+,N/A,N/A,18.11 Use Standard Hardening Configuration Templates for Databases,,PR.IP-1 A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+,,,19 Incident Response and Management,,
+,N/A,N/A,19.1 Document Incident Response Procedures,,PR.IP-9 Response plans (Incident Response and Business Continuity) and recovery plans (Incident Recovery and Disaster Recovery) are in place and managed
+,N/A,N/A,19.2 Assign Job Titles and Duties for Incident Response,,"PR.IP-9 Response plans (Incident Response and Business Continuity) and recovery plans (Incident Recovery and Disaster Recovery) are in place and managed
+ID.GV-2 Cybersecurity roles and responsibilities are coordinated and aligned with internal roles and external partners
+RS.CO-1 Personnel know their roles and order of operations when a response is needed
+DE.DP-1 Roles and responsibilities for detection are well defined to ensure accountability"
+,N/A,N/A,19.3 Designate Management Personnel to Support Incident Handling,,"PR.IP-9 Response plans (Incident Response and Business Continuity) and recovery plans (Incident Recovery and Disaster Recovery) are in place and managed
+DE.DP-1 Roles and responsibilities for detection are well defined to ensure accountability"
+,N/A,N/A,19.4 Devise Organization-wide Standards for Reporting Incidents,,RS.CO-2 Incidents are reported consistent with established criteria
+,N/A,N/A,19.5 Maintain Contact Information For Reporting Security Incidents,,ID.SC-5 Response and recovery planning and testing are conducted with suppliers and third-party providers
+,N/A,N/A,19.6 Publish Information Regarding Reporting Computer Anomalies and Incidents,,"DE.DP-4 Event detection information is communicated
+RS.CO-4 Coordination with stakeholders occurs consistent with response plans"
+,N/A,N/A,19.7 Conduct Periodic Incident Scenario Sessions for Personnel,,PR.IP-10 Response and recovery plans are tested
+,N/A,N/A,19.8 Create Incident Scoring and Prioritization Schema,,RS.AN-4 Incidents are categorized consistent with response plans
+,,,20 Penetration Tests and Red Team Exercises,,
+,N/A,N/A,20.1 Establish a Penetration Testing Program,,
+,N/A,N/A,20.2 Conduct Regular External and Internal Penetration Tests,,
+,N/A,N/A,20.3 Perform Periodic Red Team Exercises,,
+,N/A,N/A,20.4 Include Tests for Presence of Unprotected System Information and Artifacts,,
+,N/A,N/A,20.5 Create Test Bed for Elements Not Typically Tested in Production,,
+,N/A,N/A,20.6 Use Vulnerability Scanning and Penetration Testing Tools in Concert,,
+,N/A,N/A,"20.7 Ensure Results from Penetration Test are Documented Using Open, Machine-readable Standards",,
+,N/A,N/A,20.8 Control and Monitor Accounts Associated with Penetration Testing,,"PR.AC-1 Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes"
