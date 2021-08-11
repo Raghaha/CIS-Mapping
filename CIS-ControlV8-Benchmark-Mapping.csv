@@ -1,0 +1,206 @@
+CIS-Controls,Asset Type,Security Function,CIS Sub-Controls,CIS_CentOS_Linux_7_Benchmark_v3.1.1,CIS_Amazon_Web_Services_Foundations_Benchmark_v1.4.0
+01. Inventory and Control of Enterprise Assets,Devices,Identify,1.1 Establish and Maintain Detailed Enterprise Asset Inventory,,3.5 Ensure AWS Config is enabled in all regions (Automated)
+,Devices,Respond,1.2 Address Unauthorized Assets,,
+,Devices,Detect,1.3 Utilize an Active Discovery Tool,,
+,Devices,Identify,1.4 Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory,,
+,Devices,Detect,1.5 Use a Passive Asset Discovery Tool,,
+02. Inventory and Control of Software Assets,Applications,Identify,2.1 Establish and Maintain a Software Inventory,,
+,Applications,Identify,2.2 Ensure Authorized Software is Currently Supported,,
+,Applications,Respond,2.3 Address Unauthorized Software,,
+,Applications,Detect,2.4 Utilize Automated Software Inventory Tools,,
+,Applications,Protect,2.5 Allowlist Authorized Software,,
+,Applications,Protect,2.6 Allowlist Authorized Libraries,,
+,Applications,Protect,2.7 Allowlist Authorized Scripts,,
+"03. Data Protection",Data,Identify,3.1 Establish and Maintain a Data Management Process,,"1.19 Ensure that all the expired SSL/TLS certificates stored in AWS IAM are removed (Automated); 2.1.4 Ensure all data in Amazon S3 has been discovered, classified and secured when required. (Manual); "
+,Data,Identify,3.2 Establish and Maintain a Data Inventory,,
+,Data,Protect,3.3 Configure Data Access Control Lists,"1.1.5 Ensure nosuid option set on /tmp partition (Automated); 1.1.6 Ensure /dev/shm is configured (Automated); 1.1.7 Ensure noexec option set on /dev/shm partition (Automated); 1.1.8 Ensure nodev option set on /dev/shm partition (Automated); 1.1.9 Ensure nosuid option set on /dev/shm partition (Automated); 1.1.11 Ensure separate partition exists for /var/tmp (Automated); 1.1.12 Ensure /var/tmp partition includes the noexec option (Automated); 1.1.13 Ensure /var/tmp partition includes the nodev option (Automated); 1.1.14 Ensure /var/tmp partition includes the nosuid option (Automated); 1.1.18 Ensure /home partition includes the nodev option (Automated); 1.1.19 Ensure removable media partitions include noexec option (Automated); 1.1.20 Ensure nodev option set on removable media partitions;(Automated); 1.1.21 Ensure nosuid option set on removable media partitions;(Automated); 1.1.22 Ensure sticky bit is set on all world-writable directories(Automated); 1.6.1.1 Ensure SELinux is installed (Automated); 1.6.1.2 Ensure SELinux is not disabled in bootloader configuration
+(Automated); 1.6.1.3 Ensure SELinux policy is configured (Automated); 1.6.1.4 Ensure the SELinux mode is enforcing or permissive (Automated); 1.6.1.5 Ensure the SELinux mode is enforcing (Automated); 1.6.1.6 Ensure no unconfined services exist (Automated); 1.7.4 Ensure permissions on /etc/motd are configured (Automated); 1.7.5 Ensure permissions on /etc/issue are configured (Automated); 1.7.6 Ensure permissions on /etc/issue.net are configured (Automated);4.1.17 Ensure the audit configuration is immutable (Automated); 4.2.1.3 Ensure rsyslog default file permissions configured (Automated); 4.2.1.6 Ensure remote rsyslog messages are only accepted on designated log hosts. (Manual); 4.2.3 Ensure permissions on all logfiles are configured (Manual); 5.1.2 Ensure permissions on /etc/crontab are configured (Automated);5.1.3 Ensure permissions on /etc/cron.hourly are configured (Automated); 5.1.4 Ensure permissions on /etc/cron.daily are configured (Automated); 5.1.5 Ensure permissions on /etc/cron.weekly are configured (Automated); 5.1.6 Ensure permissions on /etc/cron.monthly are configured (Automated); 5.1.7 Ensure permissions on /etc/cron.d are configured (Automated); 5.1.8 Ensure cron is restricted to authorized users (Automated); 5.1.9 Ensure at is restricted to authorized users (Automated); 5.3.1 Ensure permissions on /etc/ssh/sshd_config are configured(Automated);5.3.2 Ensure permissions on SSH private host key files are configured(Automated); 5.3.3 Ensure permissions on SSH public host key files are configured(Automated); 5.3.4 Ensure SSH access is limited (Automated); 5.5.2 Ensure system accounts are secured (Automated); 5.5.5 Ensure default user umask is configured (Automated); 5.7 Ensure access to the su command is restricted (Automated); 6.1.1 Audit system file permissions (Manual); 6.1.2 Ensure permissions on /etc/passwd are configured (Automated); 6.1.3 Ensure permissions on /etc/passwd- are configured (Automated); 6.1.4 Ensure permissions on /etc/shadow are configured (Automated); 6.1.5 Ensure permissions on /etc/shadow- are configured (Automated); 6.1.6 Ensure permissions on /etc/gshadow- are configured (Automated); 6.1.7 Ensure permissions on /etc/gshadow are configured (Automated); 6.1.8 Ensure permissions on /etc/group are configured (Automated); 6.1.9 Ensure permissions on /etc/group- are configured (Automated); 6.1.10 Ensure no world writable files exist (Automated); 6.2.3 Ensure all groups in /etc/passwd exist in /etc/group (Automated); 6.2.12 Ensure users own their home directories (Automated); 6.2.13 Ensure users' home directories permissions are 750 or more restrictive (Automated); 6.2.14 Ensure users' dot files are not group or world writable (Automated)","1.4 Ensure no 'root' user account access key exists (Automated); 1.11 Do not setup access keys during initial user setup for all IAM users that have a console password (Manual); 1.16 Ensure IAM policies that allow full ""*:*"" administrative privileges are not attached (Automated); 1.20 Ensure that IAM Access analyzer is enabled for all regions (Automated); 2.1.3 Ensure MFA Delete is enable on S3 buckets (Automated); 2.1.5 Ensure that S3 Buckets are configured with 'Block public access (bucket settings)' (Automated); 3.3 Ensure the S3 bucket used to store CloudTrail logs is not publicly accessible (Automated); 4.10 Ensure a log metric filter and alarm exist for security group changes (Automated); 5.3 Ensure the default security group of every VPC restricts all traffic (Automated); 5.4 Ensure routing tables for VPC peering are ""least access"" (Manual)"
+,Data,Protect,3.4 Enforce Data Retention,,
+,Data,Protect,3.5 Securely Dispose of Data,,
+,Devices,Protect,3.6 Encrypt Data on End-User Devices,,
+,Data,Identify,3.7 Establish and Maintain a Data Classification Scheme,,
+,Data,Identify,3.8 Document Data Flows,,
+,Data,Protect,3.9 Encrypt Data on Removable Media,,
+,Data,Protect,3.10 Encrypt Sensitive Data in Transit,5.3.13 Ensure only strong Ciphers are used (Automated),2.1.2 Ensure S3 Bucket Policy is set to deny HTTP requests (Manual);
+,Data,Protect,3.11 Encrypt Sensitive Data at Rest,5.4.3 Ensure password hashing algorithm is SHA-512 (Automated); 6.2.1 Ensure accounts in /etc/passwd use shadowed passwords (Automated),2.1.1 Ensure all S3 buckets employ encryption-at-rest (Manual); 2.2.1 Ensure EBS volume encryption is enabled (Manual); 2.3.1 Ensure that encryption is enabled for RDS Instances (Automated); 3.7 Ensure CloudTrail logs are encrypted at rest using KMS CMKs (Automated); 3.8 Ensure rotation for customer created CMKs is enabled (Automated); 
+,Network,Protect,3.12 Segment Data Processing and Storage Based on Sensitivity,,
+,Data,Protect,3.13 Deploy a Data Loss Prevention Solution,,
+,Data,Detect,3.14 Log Sensitive Data Access,"1.3.1 Ensure AIDE is installed (Automated)
+; 1.3.2 Ensure filesystem integrity is regularly checked (Automated); ",3.6 Ensure S3 bucket access logging is enabled on the CloudTrail S3 bucket (Automated)
+"04. Secure Configuration of Enterprise Assets and Software",Applications,Protect,4.1 Establish and Maintain a Secure Configuration Process,"1.1.1.1 Ensure mounting of cramfs filesystems is disabled (Automated);1.1.1.2 Ensure mounting of squashfs filesystems is disabled (Automated);1.1.1.3 Ensure mounting of udf filesystems is disabled (Automated);1.1.2;Ensure /tmp is configured (Automated);1.1.3 Ensure noexec option set on /tmp partition (Automated);1.1.4 Ensure nodev option set on /tmp partition (Automated);1.1.5 Ensure nosuid option set on /tmp partition (Automated);1.1.6 Ensure /dev/shm is configured (Automated);1.1.7 Ensure noexec option set on /dev/shm partition (Automated);1.1.8 Ensure nodev option set on /dev/shm partition (Automated);1.1.9 Ensure nosuid option set on /dev/shm partition (Automated);1.1.10 Ensure separate partition exists for /var (Automated);1.1.11 Ensure separate partition exists for /var/tmp (Automated);1.1.12 Ensure /var/tmp partition includes the noexec option (Automated);1.1.13 Ensure /var/tmp partition includes the nodev option (Automated);1.1.14 Ensure /var/tmp partition includes the nosuid option (Automated);1.1.15 Ensure separate partition exists for /var/log (Automated);1.1.17 Ensure separate partition exists for /home (Automated);1.1.18 Ensure /home partition includes the nodev option (Automated);1.1.20 Ensure nodev option set on removable media partitions(Automated);1.1.21 Ensure nosuid option set on removable media partitions(Automated);1.1.22 Ensure sticky bit is set on all world-writable directories(Automated);1.4.1 Ensure bootloader password is set (Automated);1.4.2 Ensure permissions on bootloader config are configured (Automated);1.4.3 Ensure authentication required for single user mode (Automated);1.5.1 Ensure core dumps are restricted (Automated);1.5.4 Ensure prelink is not installed (Automated);1.7.1 Ensure message of the day is configured properly (Automated); 1.7.2 Ensure local login warning banner is configured properly(Automated); 1.7.3 Ensure remote login warning banner is configured properly(Automated); 1.8.2 Ensure GDM login banner is configured (Automated); 1.8.3 Ensure last logged in user display is disabled (Automated); 3.2.1 Ensure IP forwarding is disabled (Automated); 3.2.2 Ensure packet redirect sending is disabled (Automated); 3.3.1 Ensure source routed packets are not accepted (Automated); 3.3.2 Ensure ICMP redirects are not accepted (Automated); 3.3.3 Ensure secure ICMP redirects are not accepted (Automated); 3.3.5 Ensure broadcast ICMP requests are ignored (Automated)
+;3.3.6 Ensure bogus ICMP responses are ignored (Automated); 3.3.7 Ensure Reverse Path Filtering is enabled (Automated); 3.3.8 Ensure TCP SYN Cookies is enabled (Automated); 3.3.9 Ensure IPv6 router advertisements are not accepted (Automated); 5.1.1 Ensure cron daemon is enabled and running (Automated); 5.2.1 Ensure sudo is installed (Automated); 5.2.2 Ensure sudo commands use pty (Automated); 5.3.8 Ensure SSH IgnoreRhosts is enabled (Automated)
+; 5.3.9 Ensure SSH HostbasedAuthentication is disabled (Automated); 5.3.11 Ensure SSH PermitEmptyPasswords is disabled (Automated); 5.3.12 Ensure SSH PermitUserEnvironment is disabled (Automated); 5.3.14 Ensure only strong MAC algorithms are used (Automated); 5.3.15 Ensure only strong Key Exchange algorithms are used (Automated); 5.3.16 Ensure SSH Idle Timeout Interval is configured (Automated); 5.3.17 Ensure SSH LoginGraceTime is set to one minute or less (Automated);5.3.18 Ensure SSH warning banner is configured (Automated); 5.3.19 Ensure SSH PAM is enabled (Automated); 5.3.20 Ensure SSH AllowTcpForwarding is disabled (Automated); 5.3.21 Ensure SSH MaxStartups is configured (Automated); 5.3.22 Ensure SSH MaxSessions is limited (Automated);5.4.2 Ensure lockout for failed password attempts is configured(Automated); 5.5.1.1 Ensure password expiration is 365 days or less (Automated); 5.5.1.2 Ensure minimum days between password changes is configured (Automated); 5.5.1.3 Ensure password expiration warning days is 7 or more(Automated);5.5.1.4 Ensure inactive password lock is 30 days or less (Automated); 5.5.3 Ensure default group for the root account is GID 0 (Automated); 5.6 Ensure root login is restricted to system console (Manual); 6.1.10 Ensure no world writable files exist (Automated); 6.1.11 Ensure no unowned files or directories exist (Automated); 6.1.12 Ensure no ungrouped files or directories exist (Automated); 6.1.13 Audit SUID executables (Manual); 6.1.14 Audit SGID executables (Manual); 6.2.4 Ensure shadow group is empty (Automated)
+; 6.2.5 Ensure no duplicate user names exist (Automated)
+; 6.2.6 Ensure no duplicate group names exist (Automated); 6.2.7 Ensure no duplicate UIDs exist (Automated)
+; 6.2.8 Ensure no duplicate GIDs exist (Automated)
+; 6.2.9 Ensure root is the only UID 0 account (Automated); 6.2.10 Ensure root PATH Integrity (Automated)
+; 6.2.11 Ensure all users' home directories exist (Automated); 6.2.15 Ensure no users have .forward files (Automated); 6.2.17 Ensure no users have .rhosts files (Automated)",
+,Network,Protect,4.2 Establish and Maintain a Secure Configuration Process for Network Infrastructure,,
+,Users,Protect,4.3 Configure Automatic Session Locking on Enterprise Assets,5.5.4 Ensure default user shell timeout is configured (Automated),
+,Devices,Protect,4.4 Implement and Manage a Firewall on Servers,"3.5.1.1 Ensure firewalld is installed (Automated)
+; 3.5.1.2 Ensure iptables-services not installed with firewalld (Automated)
+; 3.5.1.3 Ensure nftables either not installed or masked with firewalld (Automated); 3.5.1.4 Ensure firewalld service enabled and running (Automated); 3.5.1.5 Ensure firewalld default zone is set (Automated); 3.5.1.6 Ensure network interfaces are assigned to appropriate zone (Manual); 3.5.1.7 Ensure firewalld drops unnecessary services and ports (Manual)
+; 3.5.2.1 Ensure nftables is installed (Automated)
+; 3.5.2.2 Ensure firewalld is either not installed or masked with nftables(Automated); 3.5.2.3 Ensure iptables-services not installed with nftables (Automated); 3.5.2.4 Ensure iptables are flushed with nftables (Manual); 3.5.2.5 Ensure an nftables table exists (Automated); 3.5.2.6 Ensure nftables base chains exist (Automated); 3.5.2.7 Ensure nftables loopback traffic is configured (Automated); 3.5.2.8 Ensure nftables outbound and established connections are configured (Manual); 3.5.2.9 Ensure nftables default deny firewall policy (Automated); 3.5.2.10 Ensure nftables service is enabled (Automated); 3.5.2.11 Ensure nftables rules are permanent (Automated); 3.5.3.1.1 Ensure iptables packages are installed (Automated); 3.5.3.1.2 Ensure nftables is not installed with iptables (Automated); 3.5.3.1.3 Ensure firewalld is either not installed or masked with iptables (Automated); 3.5.3.2.1 Ensure iptables loopback traffic is configured (Automated)
+; 3.5.3.2.2 Ensure iptables outbound and established connections are configured (Manual); 3.5.3.2.3 Ensure iptables rules exist for all open ports (Automated); 3.5.3.2.4 Ensure iptables default deny firewall policy (Automated); 3.5.3.2.5 Ensure iptables rules are saved (Automated); 3.5.3.2.6 Ensure iptables is enabled and running (Automated); 3.5.3.3.1 Ensure ip6tables loopback traffic is configured (Automated); 3.5.3.3.2 Ensure ip6tables outbound and established connections are configured (Manual); 3.5.3.3.3 Ensure ip6tables firewall rules exist for all open ports(Automated); 3.5.3.3.4 Ensure ip6tables default deny firewall policy (Automated); 3.5.3.3.5 Ensure ip6tables rules are saved (Automated); 3.5.3.3.6 Ensure ip6tables is enabled and running (Automated)
+",
+,Devices,Protect,4.5 Implement and Manage a Firewall on End-User Devices,,
+,Network,Protect,4.6 Securely Manage Enterprise Assets and Software,5.6 Ensure root login is restricted to system console (Manual); 6.2.16 Ensure no users have .netrc files (Automated),
+,Users,Protect,4.7 Manage Default Accounts on Enterprise Assets and Software,,
+,Devices,Protect,4.8 Uninstall or Disable Unnecessary Services on Enterprise Assets and Software,"1.6.1.7 Ensure SETroubleshoot is not installed (Automated); 1.6.1.8 Ensure the MCS Translation Service (mcstrans) is not installed(Automated); 1.8.1 Ensure GNOME Display Manager is removed (Manual); 1.8.4 Ensure XDCMP is not enabled(Automated); 2.1.1 Ensure xinetd is not installed (Automated); 2.2.2 Ensure X11 Server components are not installed (Automated)
+; 2.2.3 Ensure Avahi Server is not installed (Automated)
+; 2.2.4 Ensure CUPS is not installed (Automated)
+; 2.2.5 Ensure DHCP Server is not installed (Automated)
+; 2.2.6 Ensure LDAP server is not installed (Automated)
+; 2.2.7 Ensure DNS Server is not installed (Automated)
+; 2.2.8 Ensure FTP Server is not installed (Automated)
+; 2.2.9 Ensure HTTP server is not installed (Automated)
+; 2.2.10 Ensure IMAP and POP3 server is not installed (Automated)
+; 2.2.11 Ensure Samba is not installed (Automated)
+; 2.2.12 Ensure HTTP Proxy Server is not installed (Automated)
+; 2.2.13 Ensure net-snmp is not installed (Automated)
+; 2.2.14 Ensure NIS server is not installed (Automated)
+;  2.2.15 Ensure telnet-server is not installed (Automated)
+; 2.2.16 Ensure mail transfer agent is configured for local-only mode (Automated)
+; 2.2.17 Ensure nfs-utils is not installed or the nfs-server service is masked(Automated); 2.2.18 Ensure rpcbind is not installed or the rpcbind services are masked(Automated);2.2.19 Ensure rsync is not installed or the rsyncd service is masked(Automated)
+;  2.3.1 Ensure NIS Client is not installed (Automated)
+; 2.3.2 Ensure rsh client is not installed (Automated)
+; 2.3.3 Ensure talk client is not installed (Automated)
+; 2.3.4 Ensure telnet client is not installed (Automated)
+; 2.3.5 Ensure LDAP client is not installed (Automated)
+; 2.4 Ensure nonessential services are removed or masked (Manual)
+; 3.1.1 Disable IPv6 (Manual)
+; 3.1.2 Ensure wireless interfaces are disabled (Automated); 3.4.1 Ensure DCCP is disabled (Automated)
+; 3.4.2 Ensure SCTP is disabled (Automated)
+; 3.5.1.2 Ensure iptables-services not installed with firewalld (Automated)
+; 3.5.1.3 Ensure nftables either not installed or masked with firewalld(Automated); 3.5.2.2 Ensure firewalld is either not installed or masked with nftables
+(Automated); 3.5.2.3 Ensure iptables-services not installed with nftables (Automated); 3.5.3.1.2 Ensure nftables is not installed with iptables (Automated); 3.5.3.1.3 Ensure firewalld is either not installed or masked with iptables (Automated); 5.3.6 Ensure SSH X11 forwarding is disabled (Automated)",
+,Devices,Protect,4.9 Configure Trusted DNS Servers on Enterprise Assets,4.1.7 Ensure login and logout events are collected (Automated); 4.1.8 Ensure session initiation information is collected (Automated),
+,Devices,Respond,4.10 Enforce Automatic Device Lockout on Portable End-User Devices,,
+,Devices,Protect,4.11 Enforce Remote Wipe Capability on Portable End-User Devices,,
+,Devices,Protect,4.12 Separate Enterprise Workspaces on Mobile End-User Devices,,
+"05 Account Management",,,,,1.8 Ensure IAM password policy requires minimum length of 14 or greater (Automated); 1.13 Ensure there is only one active access key available for any single IAM user (Automated); 1.14 Ensure access keys are rotated every 90 days or less (Automated)
+,Users,Identify,5.1 Establish and Maintain an Inventory of Accounts,,
+,Users,Protect,5.2 Use Unique Passwords,5.4.1 Ensure password creation requirements are configured(Automated); 5.4.4 Ensure password reuse is limited (Automated); 5.5.1.5 Ensure all users last password change date is in the past (Automated); 6.2.2 Ensure /etc/shadow password fields are not empty (Automated),1.8 Ensure IAM password policy requires minimum length of 14 or greater (Automated); 1.9 Ensure IAM password policy prevents password reuse (Automated)
+,Users,Respond,5.3 Disable Dormant Accounts,,1.12 Ensure credentials unused for 45 days or greater are disabled (Automated) 
+,Users,Protect,5.4 Restrict Administrator Privileges to Dedicated Administrator Accounts,5.3.4 Ensure SSH access is limited (Automated); 5.3.10 Ensure SSH root login is disabled (Automated),1.4 Ensure no 'root' user account access key exists (Automated); 1.7 Eliminate use of the 'root' user for administrative and daily tasks (Automated); 1.11 Do not setup access keys during initial user setup for all IAM users that have a console password (Manual)
+,Users,Identify,5.5 Establish and Maintain an Inventory of Service Accounts,,
+,Users,Protect,5.6 Centralize Account Management,,1.21 Ensure IAM users are managed centrally via identity federation or AWS Organizations for multi-account environments (Manual)
+"06 Access Control Management",Users,Protect,6.1 Establish an Access Granting Process,,
+,Users,Protect,6.2 Establish an Access Revoking Process,,
+,Users,Protect,6.3 Require MFA for Externally-Exposed Applications,,
+,Users,Protect,6.4 Require MFA for Remote Network Access,,
+,Users,Protect,6.5 Require MFA for Administrative Access,,1.5 Ensure MFA is enabled for the 'root' user account (Automated); 1.6 Ensure hardware MFA is enabled for the 'root' user account (Automated); 1.10 Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password (Automated); 2.1.3 Ensure MFA Delete is enable on S3 buckets (Automated)
+,Users,Identify,6.6 Establish and Maintain an Inventory of Authentication and Authorization Systems,,
+,Users,Protect,6.7 Centralize Access Control,,
+,Data,Protect,6.8 Define and Maintain Role-Based Access Control,,1.15 Ensure IAM Users Receive Permissions Only Through Groups (Automated); 1.18 Ensure IAM instance roles are used for AWS resource access from instances (Manual)
+"07 Continuous Vulnerability Management",Applications,Protect,7.1 Establish and Maintain a Vulnerability Management Process,,
+,Applications,Respond,7.2 Establish and Maintain a Remediation Process,,
+,Applications,Protect,7.3 Perform Automated Operating System Patch Management,"1.2.1 Ensure GPG keys are configured (Manual); 1.2.2 Ensure package manager repositories are configured (Manual); 1.2.3 Ensure gpgcheck is globally activated (Automated); 1.9 Ensure updates, patches, and additional security software are installed (Manual)",
+,Applications,Protect,7.4 Perform Automated Application Patch Management,"1.2.1 Ensure GPG keys are configured (Manual); 1.2.2 Ensure package manager repositories are configured (Manual); 1.9 Ensure updates, patches, and additional security software are installed (Manual)",
+,Applications,Identify,5 Perform Automated Vulnerability Scans of Internal Enterprise Assets,,
+,Applications,Identify,7.6 Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets,,
+,Applications,Respond,7.7 Remediate Detected Vulnerabilities,,
+"08 Audit Log Management",Network,Protect,8.1 Establish and Maintain an Audit Log Management Process,,
+,Network,Detect,8.2 Collect Audit Logs,"4.1.1.1 Ensure auditd is installed (Automated); 4.1.1.2 Ensure auditd service is enabled and running (Automated)
+;
+4.1.1.3 Ensure auditing for processes that start prior to auditd is enabled (Automated); 4.1.2.3 Ensure system is disabled when audit logs are full (Automated); 4.1.2.4 Ensure audit_backlog_limit is sufficient (Automated); 4.2.1.1 Ensure rsyslog is installed (Automated); 4.2.1.2 Ensure rsyslog Service is enabled and running (Automated); 4.2.2.3 Ensure journald is configured to write logfiles to persistent disk(Automated)",3.6 Ensure S3 bucket access logging is enabled on the CloudTrail S3 bucket (Automated); 3.9 Ensure VPC flow logging is enabled in all VPCs (Automated)
+,Network,Protect,8.3 Ensure Adequate Audit Log Storage,"1.1.15 Ensure separate partition exists for /var/log (Automated); 1.1.16 Ensure separate partition exists for /var/log/audit (Automated); 1.1.24 Disable USB Storage (Automated); 3.3.4 Ensure suspicious packets are logged (Automated); 4.1.2.1 Ensure audit log storage size is configured (Automated)
+; 4.1.2.2 Ensure audit logs are not automatically deleted (Automated)
+; 4.1.2.3 Ensure system is disabled when audit logs are full (Automated); 4.1.2.4 Ensure audit_backlog_limit is sufficient (Automated); 4.2.1.4 Ensure logging is configured (Manual); 4.2.2.2 Ensure journald is configured to compress large log files (Automated); 4.2.4 Ensure logrotate is configured (Manual); 5.3.5 Ensure SSH LogLevel is appropriate (Automated)",
+,Network,Protect,8.4 Standardize Time Synchronization,"2.2.1.1 Ensure time synchronization is in use (Manual); 2.2.1.2 Ensure chrony is configured (Automated); 2.2.1.3 Ensure ntp is configured (Automated)",
+,Network,Detect,8.5 Collect Detailed Audit Logs,"4.1.3 Ensure events that modify date and time information are collected (Automated); 4.1.4 Ensure events that modify user/group information are collected (Automated); 4.1.5 Ensure events that modify the system's network environment are collected (Automated); 4.1.6 Ensure events that modify the system's Mandatory Access Controls are collected (Automated); 4.1.7 Ensure login and logout events are collected (Automated); 4.1.8 Ensure session initiation information is collected (Automated)
+; 4.1.9 Ensure discretionary access control permission modification events are collected (Automated); 4.1.10 Ensure unsuccessful unauthorized file access attempts are collected (Automated); 4.1.11 Ensure use of privileged commands is collected (Automated); 4.1.12 Ensure successful file system mounts are collected (Automated); 4.1.13 Ensure file deletion events by users are collected (Automated)
+; 4.1.14 Ensure changes to system administration scope (sudoers) is collected (Automated); 4.1.15 Ensure system administrator command executions (sudo) are collected (Automated); 4.1.16 Ensure kernel module loading and unloading is collected (Automated); 5.2.3 Ensure sudo log file exists (Automated); 5.3.5 Ensure SSH LogLevel is appropriate (Automated); 5.3.7 Ensure SSH MaxAuthTries is set to 4 or less (Automated)
+; ",3.1 Ensure CloudTrail is enabled in all regions (Automated); 3.4 Ensure CloudTrail trails are integrated with CloudWatch Logs (Automated); 3.10 Ensure that Object-level logging for write events is enabled for S3 bucket (Automated); 3.11 Ensure that Object-level logging for read events is enabled for S3 bucket (Automated)
+,Network,Detect,8.6 Collect DNS Query Audit Logs,,
+,Network,Detect,8.7 Collect URL Request Audit Logs,,
+,Devices,Detect,8.8 Collect Command-Line Audit Logs,,
+,Network,Detect,8.9 Centralize Audit Logs,4.2.1.5 Ensure rsyslog is configured to send logs to a remote log host (Automated); 4.2.2.1 Ensure journald is configured to send logs to rsyslog (Automated),3.4 Ensure CloudTrail trails are integrated with CloudWatch Logs (Automated);
+,Network,Protect,8.10 Retain Audit Logs,,
+,Network,Detect,8.11 Conduct Audit Log Reviews,,3.2 Ensure CloudTrail log file validation is enabled (Automated); 4.1 Ensure a log metric filter and alarm exist for unauthorized API calls (Automated); 4.2 Ensure a log metric filter and alarm exist for Management Console sign-in without MFA (Automated); 4.3 Ensure a log metric filter and alarm exist for usage of 'root' account (Automated); 4.4 Ensure a log metric filter and alarm exist for IAM policy changes (Automated); 4.5 Ensure a log metric filter and alarm exist for CloudTrail configuration changes (Automated); 4.6 Ensure a log metric filter and alarm exist for AWS Management Console authentication failures (Automated); 4.7 Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created CMKs (Automated); 4.8 Ensure a log metric filter and alarm exist for S3 bucket policy changes (Automated); 4.9 Ensure a log metric filter and alarm exist for AWS Config configuration changes (Automated); 4.10 Ensure a log metric filter and alarm exist for security group changes (Automated); 4.11 Ensure a log metric filter and alarm exist for changes to Network Access Control Lists (NACL) (Automated); 4.12 Ensure a log metric filter and alarm exist for changes to network gateways (Automated); 4.13 Ensure a log metric filter and alarm exist for route table changes (Automated); 4.14 Ensure a log metric filter and alarm exist for VPC changes (Automated); 4.15 Ensure a log metric filter and alarm exists for AWS Organizations changes (Automated)
+,Data,Detect,12 Collect Service Provider Logs,,
+"09 Email and Web Browser Protections",Applications,Protect,9.1 Ensure Use of Only Fully Supported Browsers and Email Clients,,
+,Network,Protect,9.2 Use DNS Filtering Services,,
+,Network,Protect,9.3 Maintain and Enforce Network-Based URL Filters,,
+,Applications,Protect,9.4 Restrict Unnecessary or Unauthorized Browser and Email Client Extensions ,,
+,Network,Protect,9.5 Implement DMARC,,
+,Network,Protect,9.6 Block Unnecessary File Types,,
+,Network,Protect,9.7 Deploy and Maintain Email Server Anti-Malware Protections,,
+10 Malware Defenses,Devices,Protect,10.1 Deploy and Maintain Anti-Malware Software,,
+,Devices,Protect,10.2 Configure Automatic Anti-Malware Signature Updates,,
+,Devices,Protect,10.3 Disable Autorun and Autoplay for Removable Media,"1.1.23 Disable Automounting (Automated)",
+,Devices,Detect,10.4 Configure Automatic Anti-Malware Scanning of Removable Media,,
+,Devices,Protect,10.5 Enable Anti-Exploitation Features,"1.5.2 Ensure XD/NX support is enabled (Automated)
+1.5.3 Ensure address space layout randomization (ASLR) is enabled (Automated)
+",
+,Devices,Protect,10.6 Centrally Manage Anti-Malware Software,,
+,Devices,Detect,10.7 Use Behavior-Based Anti-Malware Software,,
+"11 Data Recovery",Data,Recover,11.1 Establish and Maintain a Data Recovery Process,,
+,Data,Recover,11.2 Perform Automated Backups ,,
+,Data,Protect,11.3 Protect Recovery Data,,
+,Data,Recover,11.4 Establish and Maintain an Isolated Instance of Recovery Data,,
+,Data,Recover,11.5 Test Data Recovery,,
+12 Network Infrastructure Management,Network,Protect,12.1 Ensure Network Infrastructure is Up-to-Date,,
+,Network,Protect,12.2 Establish and Maintain a Secure Network Architecture,,
+,Network,Protect,12.3 Securely Manage Network Infrastructure,,
+,Network,Identify,12.4 Establish and Maintain Architecture Diagram(s),,
+,Network,Protect,"12.5 Centralize Network Authentication, Authorization, and Auditing (AAA)",,
+,Network,Protect,12.6 Use of Secure Network Management and Communication Protocols ,,
+,Devices,Protect,12.7 Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise’s AAA Infrastructure,,
+,Devices,Protect,12.8 Establish and Maintain Dedicated Computing Resources for All Administrative Work,,
+"13 Network Monitoring and Defense",Network,Detect,13.1 Centralize Security Event Alerting,,
+,Devices,Detect,13.2 Deploy a Host-Based Intrusion Detection Solution,,
+,Network,Detect,13.3 Deploy a Network Intrusion Detection Solution,,
+,Network,Protect,13.4 Perform Traffic Filtering Between Network Segments,,
+,Devices,Protect,13.5 Manage Access Control for Remote Assets,,
+,Network,Detect,13.6 Collect Network Traffic Flow Logs,,3.9 Ensure VPC flow logging is enabled in all VPCs (Automated)
+,Devices,Protect,13.7 Deploy a Host-Based Intrusion Prevention Solution,,
+,Network,Protect,13.8 Deploy a Network Intrusion Prevention Solution,,
+,Devices,Protect,13.9 Deploy Port-Level Access Control,,5.1 Ensure no Network ACLs allow ingress from 0.0.0.0/0 to remote server administration ports (Automated); 5.2 Ensure no security groups allow ingress from 0.0.0.0/0 to remote server administration ports (Automated)
+,Network,Protect,13.10 Perform Application Layer Filtering,,
+,Network,Detect,13.11 Tune Security Event Alerting Thresholds,,
+"14 Security Awareness and Skills Training",N/A,Protect,14.1 Establish and Maintain a Security Awareness Program,,
+,N/A,Protect,14.2 Train Workforce Members to Recognize Social Engineering Attacks,,
+,N/A,Protect,14.3 Train Workforce Members on Authentication Best Practices,,
+,N/A,Protect,14.4 Train Workforce on Data Handling Best Practices,,
+,N/A,Protect,14.5 Train Workforce Members on Causes of Unintentional Data Exposure,,
+,N/A,Protect,14.6 Train Workforce Members on Recognizing and Reporting Security Incidents,,
+,N/A,Protect,14.7 Train Workforce on How to Identify and Report if Their Enterprise Assets are Missing Security Updates,,
+,N/A,Protect,14.8 Train Workforce on the Dangers of Connecting to and Transmitting Enterprise Data Over Insecure Networks,,
+,N/A,Protect,14.9 Conduct Role-Specific Security Awareness and Skills Training,,
+"15 Service Provider Management",N/A,Identify,15.1 Establish and Maintain an Inventory of Service Providers,,
+,N/A,Identify,15.2 Establish and Maintain a Service Provider Management Policy,,
+,N/A,Identify,15.3 Classify Service Providers,,
+,N/A,Protect,15.4 Ensure Service Provider Contracts Include Security Requirements,,
+,N/A,Identify,15.5 Assess Service Providers,,
+,Data,Detect,15.6 Monitor Service Providers,,
+,Data,Protect,15.7 Securely Decommission Service Providers,,
+"16  Application Software Security",Applications,Protect,16.1 Establish and Maintain a Secure Application Development Process,,
+,Applications,Protect,16.2 Establish and Maintain a Process to Accept and Address Software Vulnerabilities,,
+,Applications,Protect,16.3 Perform Root Cause Analysis on Security Vulnerabilities,,
+,Applications,Protect,16.4 Establish and Manage an Inventory of Third-Party Software Components,,
+,Applications,Protect,16.5 Use Up-to-Date and Trusted Third-Party Software Components,,
+,Applications,Protect,16.6 Establish and Maintain a Severity Rating System and Process for Application Vulnerabilities,,
+,Applications,Protect,16.7 Use Standard Hardening Configuration Templates for Application Infrastructure,,
+,Applications,Protect,16.8 Separate Production and Non-Production Systems,,
+,Applications,Protect,16.9 Train Developers in Application Security Concepts and Secure Coding,,
+,Applications,Protect,16.10 Apply Secure Design Principles in Application Architectures,,
+,Applications,Protect,16.11 Leverage Vetted Modules or Services for Application Security Components,,
+,Applications,Protect,16.12 Implement Code-Level Security Checks,,
+,Applications,Protect,16.13 Conduct Application Penetration Testing,,
+,Applications,Protect,16.14 Conduct Threat Modeling,,
+17 Incident Response Management,N/A,Respond,17.1 Designate Personnel to Manage Incident Handling,,1.17 Ensure a support role has been created to manage incidents with AWS Support (Automated)
+,N/A,Respond,17.2 Establish and Maintain Contact Information for Reporting Security Incidents,,1.1 Maintain current contact details (Manual); 1.2 Ensure security contact information is registered (Manual); 1.3 Ensure security questions are registered in the AWS account (Manual)
+,N/A,Respond,17.3 Establish and Maintain an Enterprise Process for Reporting Incidents,,
+,N/A,Respond,17.4 Establish and Maintain an Incident Response Process,,
+,N/A,Respond,17.5 Assign Key Roles and Responsibilities,,
+,N/A,Respond,17.6 Define Mechanisms for Communicating During Incident Response,,
+,N/A,Recover,17.7 Conduct Routine Incident Response Exercises,,
+,N/A,Recover,17.8 Conduct Post-Incident Reviews,,
+,N/A,Recover,17.9 Establish and Maintain Security Incident Thresholds,,
+"18 Penetration Testing",N/A,Identify,18.1 Establish and Maintain a Penetration Testing Program,,
+,Network,Identify,18.2 Perform Periodic External Penetration Tests,,
+,Network,Protect,18.3 Remediate Penetration Test Findings,,
+,Network,Protect,18.4 Validate Security Measures,,
+,N/A,Identify,18.5 Perform Periodic Internal Penetration Tests,,
